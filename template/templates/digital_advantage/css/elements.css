@@ -1,0 +1,11 @@
+body {
+	background: black;
+}
+
+p {
+	margin: 1em 0;
+}
+
+ol, ul {
+	margin: 1em 0 1em 1em;
+}

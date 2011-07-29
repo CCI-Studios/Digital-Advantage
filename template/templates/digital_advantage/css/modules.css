@@ -1,0 +1,47 @@
+/* @group module positions */
+#social1 {
+	position: absolute;
+	right: 0;
+	top: 25px;
+}
+
+/* @end group */
+
+
+/* @group hmenu */
+.moduletable_hmenu {
+	
+}
+
+.moduletable_hmenu > ul {
+	list-style: none;
+	margin: 0;
+	text-align: center;
+}
+
+.moduletable_hmenu > ul > li {
+	display: inline-block;
+	*display: inline;
+	padding: 0 10px;
+	position: relative;
+	zoom: 1;
+}
+
+.moduletable_hmenu ul ul {
+	display: none;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 100%;
+}
+
+.moduletable_hmenu li:hover > ul { display: block; }
+
+.moduletable_hmenu ul ul li {
+	
+}
+/* @end hmenu */
+
+
+/* @group vmenu */
+/* @end vmenu */

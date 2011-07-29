@@ -1,0 +1,57 @@
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+	width: 940px;
+}
+
+#all {}
+	
+#header {
+	background: #092162 url(../images/header_bg1.png) center top no-repeat;
+}
+#header > div {
+	background: url(../images/header_bg2.png) center top repeat-x;
+	padding-top: 6px;
+}
+
+#header .container { height: 102px; }
+
+#masthead { background: #092162 url(../images/watermark.png) center -72px no-repeat; }
+#masthead > div { background: url(../images/masthead_bg.png) center top repeat-x; }
+#masthead > div > div { background: url(../images/masthead_bg2.png) center bottom repeat-x; }
+#masthead .container { min-height: 250px; }
+
+#body {
+	background: white;
+	padding:  45px 0;
+}
+
+#body > div { background: url(../images/sidebar_bg_middle.png) right repeat-y; }
+#topfrill, #bottomfrill {
+	position: absolute;
+	right: 0;
+	top: -64px;
+	z-index: 1;
+}
+#bottomfrill { bottom: -69px; top: auto; }
+
+#component {
+	float: left;
+	position: relative;
+	width: 540px;
+	z-index: 2;
+}
+
+#sidebar {
+	float: left;
+	position: relative;
+	margin: 0 25px 0 105px;
+	width: 270px;
+	z-index: 2;
+}
+
+#footer {
+	background: url(../images/footer_bg.png) repeat-x;
+	min-height: 238px;
+}
