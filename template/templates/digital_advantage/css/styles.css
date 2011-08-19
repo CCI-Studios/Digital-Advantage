@@ -1,4 +1,7 @@
 .left { float: left; }
 .right { float: right; }
 .clear { clear:  both; }
+.clear.margins { height: 1px; }
+
 .hidden { display: none; }
+

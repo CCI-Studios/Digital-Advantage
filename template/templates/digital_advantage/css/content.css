@@ -1,1 +1,22 @@
 .purple { color: #123123; }
+.green { color: #147d3e; }
+
+
+.button {
+	background: url(../images/button.png) left top no-repeat;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	padding-left: 12px;
+}
+
+.button span {
+	background: url(../images/button.png) right bottom no-repeat;
+	color: white;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	line-height: 30px;
+	padding: 0 15px 0 3px;
+	text-transform: uppercase;
+}

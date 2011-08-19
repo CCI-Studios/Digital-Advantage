@@ -29,7 +29,9 @@
 	</files>
 
 	<positions>
-		<positions>copyright</positions>
+		<position>bottom</position>
+		<position>bottommenu</position>
+		<position>copyright</positions>
 		<position>debug</position>
 		<position>header</position>
 		<position>logo</position>
