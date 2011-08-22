@@ -37,7 +37,7 @@ cci.slideshow = new Class({
 			this.maxHeight = Math.max(this.maxHeight, slide.getSize().y);
 			slide.setStyle('display', 'none');
 			
-			this.slides.include($(slide));
+			this.slides.include(slide);
 			i = new Element('li');
 			i.setStyles({
 				cursor: 'pointer'
@@ -46,18 +46,21 @@ cci.slideshow = new Class({
 				this.showSlide(this.indicators.getElements('li').indexOf(i));
 			}.bind(this));
 			this.indicators.adopt(i);
-			// slide.addEvent('click', this.cycleForward.bind(this));
-			
 		}, this);
 		
 		this.slides.each(function (slide) {
 			var img = slide.getElement('img');
 			
-			slide.setStyle('display', 'block');
+			slide.setStyles({
+				display: 'block',
+				height: this.maxHeight + 'px'
+			});
+
 			img.setStyles({
 				height: this.maxHeight + 'px',
 				width: 'auto'
 			});
+			
 			img.setStyle('left', Math.round((470-img.getSize().x)/2) + 'px');
 			slide.setStyle('display', 'none');
 		}.bind(this));
@@ -88,12 +91,12 @@ cci.slideshow = new Class({
 	showSlide: function (iToShow) {
 		var now, currentSlide, slide, fadeIn;
 		
-		if (this.timer) {
-			clearTimeout(this.timer);
-		}
-		
 		if (this.fading) {
 			return;
+		}
+		
+		if (this.timer) {
+			clearTimeout(this.timer);
 		}
 		
 		now = this.now;
@@ -139,10 +142,12 @@ cci.slideshow = new Class({
 	}
 });
 
-window.addEvent('domready', function () {
+window.addEvent('load', function () {
 	var s = new cci.slideshow({
 		slides: $$('.moduletable.slider li')
 	});
+});
+
 window.addEvent('domready', function() {
 	var images = $$('img');
 	
