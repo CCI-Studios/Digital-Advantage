@@ -143,4 +143,25 @@ window.addEvent('domready', function () {
 	var s = new cci.slideshow({
 		slides: $$('.moduletable.slider li')
 	});
+window.addEvent('domready', function() {
+	var images = $$('img');
+	
+	images.each(function (image) {
+		var normal, over;
+		
+		normal = image.src;
+		over = image.src.replace('_normal.', '_over.');
+		
+		if (normal == over)
+			return;
+			
+		image.addEvents({
+			mouseenter: function () {
+				image.src = over;
+			},
+			mouseleave: function() {
+				image.src = normal;
+			}
+		});
+	});
 });
