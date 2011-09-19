@@ -1,7 +1,6 @@
 .purple { color: #123123; }
 .green { color: #147d3e; }
 
-
 .button {
 	background: url(../images/button.png) left top no-repeat;
 	display: inline-block;
@@ -19,4 +18,16 @@
 	line-height: 30px;
 	padding: 0 15px 0 3px;
 	text-transform: uppercase;
+}
+
+ul.list {
+	list-style: none;
+	margin: 1em 0;
+	
+	text-align: center;
+}
+
+ul.list li {
+	display: inline;
+	padding: 0 15px;
 }
