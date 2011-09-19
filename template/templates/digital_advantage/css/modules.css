@@ -26,7 +26,7 @@
 }
 
 #menu {
-	left: 305px;
+	right: 180px;
 	position: absolute;
 	top: 27px;
 }
@@ -127,7 +127,7 @@
 	color: #214093;
 	display: block;
 	font-weight: bold;
-	padding-left: 26px;
+	padding-left: 20px;
 	text-decoration: none;
 }
 
@@ -135,7 +135,7 @@
 .moduletable_hmenu > ul > li > a span {
 	display: block;
 	line-height: 42px;
-	padding-right: 26px;
+	padding-right: 20px;
 }
 
 .moduletable_hmenu > ul > li.active > span,
