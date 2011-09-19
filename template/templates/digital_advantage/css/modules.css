@@ -147,18 +147,18 @@
 
 .moduletable_hmenu > ul > li.active.parent > span,
 .moduletable_hmenu > ul > li.active.parent > a {
-	background: red url(../images/menu-sliding-door.jpg) top left no-repeat;
+	background: url(../images/menu-sliding-door.jpg) top left no-repeat;
 }
 
 .moduletable_hmenu > ul > li.active.parent > span span,
 .moduletable_hmenu > ul > li.active.parent > a span {
-	background: blue url(../images/menu-sliding-door.jpg) right bottom no-repeat;
+	background: url(../images/menu-sliding-door.jpg) right bottom no-repeat;
 }
 
 .moduletable_hmenu ul ul {
 	background: #f8f8f8 url(../images/menu-cap2.png) right no-repeat;
 	display: none;
-	left: 24px;
+	right: 50px;
 	line-height: 33px;
 	margin: 0;
 	padding-right: 10px;
