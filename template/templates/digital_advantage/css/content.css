@@ -2,21 +2,31 @@
 .green { color: #147d3e; }
 
 .button {
+	-moz-appearance: none;
 	background: url(../images/button.png) left top no-repeat;
 	display: inline-block;
 	*display: inline;
 	zoom: 1;
-	padding-left: 12px;
+	
+	border: none;
+	padding: 0 0 0 12px;
+	margin: 0;
+	cursor: pointer;
+	
+	overflow: visible;
+}
+
+button.button::-moz-focus-inner {
+	padding: 0;
+	border: none;
 }
 
 .button span {
 	background: url(../images/button.png) right bottom no-repeat;
 	color: white;
-	display: inline-block;
-	*display: inline;
-	zoom: 1;
-	line-height: 30px;
-	padding: 0 15px 0 3px;
+	display: block;
+	line-height: 21px;
+	padding: 2px 15px 7px 3px;
 	text-transform: uppercase;
 }
 
