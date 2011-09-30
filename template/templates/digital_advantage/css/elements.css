@@ -41,8 +41,13 @@ h2, h3 {
 	font-size: 14px;
 }
 
-h3 { }
-h4, h5, h6 { }
+h3 { font-size: 12px; }
+h4, h5, h6 { font-size: 10px; }
+
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+
 
 /* @group forms */
 .chronoform { display: none; }
