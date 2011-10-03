@@ -2,7 +2,6 @@
 <?php
 defined('_JEXEC') or die;
 
-
 ?>
 <html>
 <head>
