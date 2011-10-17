@@ -121,7 +121,7 @@
 	*display: inline;
 	zoom: 1;
 	
-	position: relative;
+	/*position: relative;*/
 }
 
 .moduletable_hmenu > ul > li > span,
@@ -160,7 +160,7 @@
 .moduletable_hmenu ul ul {
 	background: #f8f8f8 url(../images/menu-cap2.png) right no-repeat;
 	display: none;
-	left: -20px;
+	left: 75px;
 	line-height: 33px;
 	margin: 0;
 	padding-right: 10px;
